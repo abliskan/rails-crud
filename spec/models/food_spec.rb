@@ -24,7 +24,8 @@ RSpec.describe Food, type: :model do
         description: 'Betawi style steamed rice cooked in coconut milk. Delicious!',
         price: 15000.0
       )
-      food.valid
+  
+    food.valid
   
     expect(food.errors[:name]).to include("can't be blank")
     
